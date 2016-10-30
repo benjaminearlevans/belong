@@ -1,34 +1,23 @@
 $(document).ready(function(){
 
-	$('.home-nav').click(function(e){
+	$('.home-nav a').click(function(e){
 		e.preventDefault();
-		// var targetItem = $(this).attr('href');
-		// var content = "";
+		var url = $(this).attr('href');
 
-		// switch(targetItem){
-		// 	case '#work2':
-		// 		content = '<div class="wo-detail-item"><h1>What if there was an easy way <br>to buy local foods?</h1><div><img src="img/work-detail-img2.jpg"></div></div>';
-		// 	break;
-		// 	case '#work3':
-		// 		content = '<div class="wo-detail-item dark-grey"><h1>What if there was an easy way <br>to buy local foods?</h1><div><img src="img/work-detail-img2.jpg"></div></div>';
-		// 	break;
-		// 	case '#work4':
-		// 		content = '<div class="wo-detail-item dark-grey"><h1>What if there was an easy way <br>to buy local foods?</h1><div><img src="img/work-detail-img1.jpg"></div></div>';
-		// 	break;
-		// 	case '#work5':
-		// 		content = '<div class="wo-detail-item white"><h1>What if there was an easy way <br>to buy local foods?</h1><div><img src="img/work-detail-img1.jpg"></div></div>';
-		// 	break;
-		// 	case '#work6':
-		// 		content = '<div class="wo-detail-item white"><h1>What if there was an easy way <br>to buy local foods?</h1><div><img src="img/work-detail-img2.jpg"></div></div>';
-		// 	break;
+		if(url == '#') return false;
+		
+		$.ajax({
+		   url:url,
+		   type:'GET',
+		   success: function(result){
+		   		var html = jQuery('<div>').html(result);
+		   		var page = $(html).find('#pagewrapper').html();
 
-		// 	default:
-		// 		content = '<div class="wo-detail-item"><h1>What if there was an easy way <br>to buy local foods?</h1><div><img src="img/work-detail-img1.jpg"></div></div>';
-		// 	break;
-		// }
+		       	$('.po-detail-item').html(page);
+		   }
+		});
 
 		$('body').addClass('overlay-open');
-		// $('.wo-content-inner').html(content);
 		$('.page-overlay').addClass('active');
 	});
 
@@ -40,6 +29,7 @@ $(document).ready(function(){
 		setTimeout(function(){
 			overlay.removeClass('active close');
 			$('body').removeClass('overlay-open');
+			$('.po-detail-item').html('');
 		}, 1000);
 	});
 })

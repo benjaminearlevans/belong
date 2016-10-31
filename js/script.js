@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('.home-nav a').click(function(e){
+	$('.home-nav a, a.inner-page-link').click(function(e){
 		e.preventDefault();
 		var url = $(this).attr('href');
 

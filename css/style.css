@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'CircularStd-Medium';}
 .po-back:hover .po-logo{color: #fff;}
 .po-content{padding-left: 87px; height: 100%;}
 .po-inner-wrapper{position: relative; width: 100%; height: 100%;}
-.po-content-inner{position: absolute; height: 100%; width: 100%; top: 0; left: 100%; transition: all .7s cubic-bezier(0.55, 0.06, 0.68, 0.19);}
+.po-content-inner{position: absolute; height: 100%; width: 100%; top: 0; left: 100%; transition: all .5s cubic-bezier(0.55, 0.06, 0.68, 0.19);}
 .po-detail-item{position: relative; height: 100%; width: 100%; background-color: #fcfcfc; padding-left: 80px; overflow-y: auto;}
 .po-detail-item.dark-grey{background: #454545}
 .po-detail-item.white{background: #fff; color: #000;}

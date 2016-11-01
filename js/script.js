@@ -19,11 +19,13 @@ $(document).ready(function(){
 
 		$('body').addClass('overlay-open');
 		$('.page-overlay').addClass('active');
+
+		resetMobileMenu();
 	});
 
-	$('.po-back').click(function(e){
+	$('.po-back, .navbar-brand').click(function(e){
 		e.preventDefault();
-		var overlay =  $(this).closest('.page-overlay');
+		var overlay = $('.page-overlay');
 		overlay.addClass('close');
 
 		setTimeout(function(){
@@ -32,4 +34,12 @@ $(document).ready(function(){
 			$('.po-detail-item').html('');
 		}, 1000);
 	});
+
+	$('.more-btn').click(function(){
+		$('body').toggleClass('open');
+	});
 })
+
+function resetMobileMenu(){
+	$('body').removeClass('open');
+}

@@ -105,11 +105,13 @@ h1,h2,h3,h4,h5,h6{font-family: 'CircularStd-Medium';}
 .card-footer .cf-inner{border-top: solid 1px #e9ebee; padding-top: 16px;}
 .card .post-title{font-family: 'CircularStd-Book'; color: #000; font-size: 24px; line-height: 34px; margin-bottom: 13px;}
 .card p{font-size: 14px; line-height: 26px; color: #989898; margin-bottom: 15px;}
+.card .post-title + p{font-size: 16px;}
 .card .card-img-top{margin-top:-20px; margin-right: -20px; margin-left: -20px;}
 .card.card-video .post-title{color: #fff;}
 .card.card-video p{color: #fff;}
 .card-play-btn{text-align: center; flex: 1; background: url(../img/icon-play.svg) center center no-repeat transparent;}
 .card.card-video .card-content{display: flex; flex-direction: column; justify-content: flex-end;}
+.card.with-content-img .card-footer .cf-inner{border-top: 0}
 
 .large-link{font-family: 'CircularStd-Medium'; font-size: 60px; color: #000;}
 .large-link .icon{position: relative; transition: all 250ms cubic-bezier(.02, .01, .47, 1); left: 0;}

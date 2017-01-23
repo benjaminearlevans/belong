@@ -141,6 +141,17 @@ img.media-object{max-width: none;}
 .ico-yt{background-image: url(../img/youtube.svg);}
 .ico-lk{background-image: url(../img/linkedin.svg);}
 
+.homepage-v2{font-family: 'Sailec-Hairline'; background: #000; color: #fff; min-height: 100vh;}
+.homepage-v2 h3{font-family: 'Sailec-Hairline'; font-size: 22px; font-weight: 300; line-height: 1.55;}
+.homepage-v2 h3 a{color: #fff; text-decoration: underline;}
+.homepage-v2-inner{padding-top: 80px; padding-bottom: 80px;}
+.homepage-v2 .hm2-logo{margin-bottom: 38px;}
+.homepage-v2 .hm2-title{font-family: 'Sailec-Hairline'; font-size: 32px; font-weight: 300; line-height: 1.5; margin-bottom: 72px;}
+.homepage-v2 .hm2-media .media{margin-bottom: 50px; min-height: 110px; display: block; color: #fff; opacity: .7; transition: all .8s ease;}
+.homepage-v2 .hm2-media .media:hover{text-decoration: none; opacity: 1;}
+.homepage-v2 .hm2-media .media-heading{font-family: 'Sailec-Light'; font-size: 22px;}
+.homepage-v2 .media-left{padding-right: 17px;}
+
 @media screen and (max-width: 1280px){
 	.section1020{max-width: 1020px;}
 	.projects-wrapper{max-width: 740px; margin: 46px 0 ;}
@@ -196,6 +207,11 @@ img.media-object{max-width: none;}
 
 @media screen and (max-width: 680px){
 	.projects-wrapper{max-width: none; margin: 23px auto 15px; justify-content: center;}
+	.hm2-media br{display: none;}
+	.homepage-v2-inner{padding-top: 30px; padding-bottom: 25px;}
+	.homepage-v2 .hm2-title{margin-bottom: 45px;}
+	.homepage-v2 .hm2-media .media{margin-bottom: 15px;}
+	.homepage-v2 h3 a, .homepage-v2 h3 span{display: inline-block;}
 }
 
 @media screen and (min-width: 961px){
@@ -204,4 +220,8 @@ img.media-object{max-width: none;}
 
 @media screen and (min-width: 768px){
 	.navbar-right{margin-right: 0}
+}
+
+@media screen and (min-width: 636px) and (max-width: 768px){
+	.hm2-media .col-xs-12{width: 50%;}
 }

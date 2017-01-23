@@ -127,7 +127,7 @@ img.media-object{max-width: none;}
 .page-footer h4{font-family: 'CircularStd-Book'; font-size: 18px; color: #989898;}
 
 .social-links {min-height: 80px; display: flex; justify-content: space-around; flex-direction: row; align-items: center;}
-.social-links a{display: inline-block; width: 36px; height: 28px; background-position: center; background-repeat: no-repeat;}
+.social-links a{display: inline-block; width: 28px; height: 28px; background-position: center; background-repeat: no-repeat;}
 .social-links a:last-child{margin-right: 0}
 
 .icon{display: inline-block; vertical-align: middle; background-position: center; background-repeat: no-repeat;}
@@ -140,14 +140,6 @@ img.media-object{max-width: none;}
 .ico-medium{background-image: url(../img/medium.svg);}
 .ico-yt{background-image: url(../img/youtube.svg);}
 .ico-lk{background-image: url(../img/linkedin.svg);}
-
-.ico-fb:hover{background-image: url(../img/facebook-hover.svg);}
-.ico-tw:hover{background-image: url(../img/twitter-hover.svg);}
-.ico-dribble:hover{background-image: url(../img/dribble-hover.svg);}
-.ico-ig:hover{background-image: url(../img/instagram-hover.svg);}
-.ico-medium:hover{background-image: url(../img/medium-hover.svg);}
-.ico-yt:hover{background-image: url(../img/youtube-hover.svg);}
-.ico-lk:hover{background-image: url(../img/linkedin-hover.svg);}
 
 @media screen and (max-width: 1280px){
 	.section1020{max-width: 1020px;}
